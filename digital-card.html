@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AK Enterprise | Digital Visiting Card</title>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color"
+content="#071426">
+
+<meta name="description"
+content="AK Enterprise Lakhimpur Kheri - Digital Services, Logo Design, Website, Google Business Profile, WhatsApp Business Setup, Digital Visiting Card, Poster Design, Social Media Management and T-Shirt Printing.">
+
+<title>
+AK Enterprise | Digital Visiting Card
+</title>
+
 
 <style>
+
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
 
 *{
     box-sizing:border-box;
@@ -14,383 +31,1627 @@
     padding:0;
 }
 
+
 html{
     scroll-behavior:smooth;
 }
 
+
 body{
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
     background:#071426;
+
     color:#172033;
+
+    min-height:100vh;
 }
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
 
 .card{
+
     width:100%;
+
     max-width:480px;
-    margin:auto;
+
+    margin:0 auto;
+
     background:#f7f9fc;
+
     min-height:100vh;
+
     overflow:hidden;
-    box-shadow:0 0 35px rgba(0,0,0,.35);
+
+    box-shadow:
+    0 0 40px rgba(0,0,0,.35);
 }
 
-/* ================= HEADER ================= */
+
+/* =====================================================
+   HEADER
+===================================================== */
 
 .header{
+
     background:
-    radial-gradient(circle at top right,rgba(245,197,66,.20),transparent 35%),
-    linear-gradient(145deg,#061a36,#0d3d78);
+
+    radial-gradient(
+        circle at top right,
+        rgba(245,197,66,.22),
+        transparent 38%
+    ),
+
+    linear-gradient(
+        145deg,
+        #061a36,
+        #0d3d78
+    );
+
     color:white;
+
     text-align:center;
-    padding:28px 18px 30px;
+
+    padding:
+    30px
+    18px
+    34px;
 }
+
+
+/* DIGITAL CARD BADGE */
 
 .badge{
+
     display:inline-block;
+
     background:#f5c542;
+
     color:#071426;
-    padding:7px 17px;
+
+    padding:
+    8px
+    18px;
+
     border-radius:30px;
+
     font-size:12px;
-    font-weight:800;
+
+    font-weight:900;
+
     letter-spacing:1px;
-    margin-bottom:18px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 5px 15px
+    rgba(0,0,0,.18);
 }
+
+
+/* AK LOGO */
 
 .logo{
-    width:92px;
-    height:92px;
-    margin:auto;
+
+    width:96px;
+
+    height:96px;
+
+    margin:0 auto;
+
     border-radius:50%;
-    background:white;
-    border:4px solid #f5c542;
+
+    background:#ffffff;
+
+    border:
+    4px solid
+    #f5c542;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     color:#0b3972;
-    font-size:34px;
+
+    font-size:36px;
+
     font-weight:900;
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+    box-shadow:
+    0 8px 28px
+    rgba(0,0,0,.28);
 }
+
+
+/* BUSINESS NAME */
 
 .header h1{
+
     font-size:32px;
-    margin-top:15px;
+
+    margin-top:16px;
+
+    font-weight:900;
 }
+
+
+/* TAGLINE */
 
 .header h2{
+
     color:#ffd95a;
-    font-size:17px;
+
+    font-size:18px;
+
     margin-top:8px;
+
+    font-weight:800;
 }
+
 
 .tagline{
+
     margin-top:12px;
-    font-size:14px;
-    font-weight:600;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:.2px;
 }
+
+
+/* LOCATION */
 
 .location{
-    margin:17px auto 0;
+
+    margin:
+    18px
+    auto
+    0;
+
     display:inline-block;
-    padding:9px 16px;
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.25);
-    border-radius:25px;
-    font-size:13px;
+
+    padding:
+    10px
+    17px;
+
+    background:
+    rgba(255,255,255,.12);
+
+    border:
+    1px solid
+    rgba(255,255,255,.28);
+
+    border-radius:30px;
+
+    font-size:14px;
 }
 
-/* ================= SECTION ================= */
+
+/* =====================================================
+   GENERAL SECTION
+===================================================== */
 
 .section{
-    padding:25px 18px;
+
+    padding:
+    28px
+    18px;
 }
+
 
 .title{
+
     text-align:center;
+
     color:#0b3972;
-    font-size:23px;
-    font-weight:800;
-    margin-bottom:20px;
+
+    font-size:24px;
+
+    font-weight:900;
+
+    margin-bottom:22px;
 }
 
-/* ================= SERVICES ================= */
+
+/* =====================================================
+   SERVICES GRID
+===================================================== */
 
 .services{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:14px;
 }
+
+
+/* SERVICE CARD */
 
 .service{
-    background:white;
-    border-radius:16px;
-    padding:17px 9px;
-    min-height:180px;
+
+    background:#ffffff;
+
+    border-radius:17px;
+
+    padding:
+    18px
+    10px;
+
+    min-height:190px;
+
     text-align:center;
-    border:1px solid #e2e7ee;
-    box-shadow:0 5px 16px rgba(15,40,70,.09);
+
+    border:
+    1px solid
+    #e2e7ee;
+
+    box-shadow:
+    0 6px 18px
+    rgba(15,40,70,.09);
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
+    align-items:center;
 }
+
+
+/* SERVICE ICON */
 
 .icon{
-    font-size:31px;
-    margin-bottom:9px;
-}
 
-.service h3{
-    font-size:14px;
-    color:#172033;
-    line-height:1.25;
-}
+    font-size:32px;
 
-.service p{
-    font-size:12px;
-    color:#5d6675;
-    margin-top:7px;
-    line-height:1.35;
-}
-
-.price{
-    display:inline-block;
-    margin-top:11px;
-    background:#0b3972;
-    color:white;
-    padding:6px 10px;
-    border-radius:20px;
-    font-size:12px;
-    font-weight:800;
-}
-
-.price.gold{
-    background:#d99600;
-}
-
-/* ================= DIGITAL CARD INFO ================= */
-
-.info{
-    background:
-    linear-gradient(135deg,#fff8d9,#fffdf5);
-    border:2px solid #f5c542;
-    border-radius:18px;
-    padding:20px;
-    text-align:center;
-}
-
-.info h3{
-    color:#855900;
-    font-size:20px;
     margin-bottom:10px;
 }
 
+
+/* SERVICE TITLE */
+
+.service h3{
+
+    font-size:15px;
+
+    color:#172033;
+
+    line-height:1.3;
+
+    font-weight:900;
+}
+
+
+/* SERVICE DESCRIPTION */
+
+.service p{
+
+    font-size:12px;
+
+    color:#5d6675;
+
+    margin-top:8px;
+
+    line-height:1.45;
+}
+
+
+/* PRICE */
+
+.price{
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    background:#0b3972;
+
+    color:#ffffff;
+
+    padding:
+    7px
+    12px;
+
+    border-radius:22px;
+
+    font-size:12px;
+
+    font-weight:900;
+}
+
+
+/* GOLD PRICE */
+
+.price.gold{
+
+    background:#d99600;
+}
+
+
+/* =====================================================
+   DIGITAL VISITING CARD EXPLANATION
+===================================================== */
+
+.info{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #fff8d9,
+        #fffdf5
+    );
+
+    border:
+    2px solid
+    #f5c542;
+
+    border-radius:19px;
+
+    padding:22px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 18px
+    rgba(0,0,0,.06);
+}
+
+
+.info h3{
+
+    color:#855900;
+
+    font-size:21px;
+
+    margin-bottom:12px;
+
+    font-weight:900;
+}
+
+
 .info p{
+
     font-size:14px;
-    line-height:1.5;
+
+    line-height:1.6;
+
     color:#454d5b;
 }
 
-/* ================= CONTACT ================= */
+
+/* =====================================================
+   QR EXPLANATION
+===================================================== */
+
+.scan-box{
+
+    margin-top:18px;
+
+    background:
+    #071426;
+
+    color:white;
+
+    border-radius:17px;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+
+.scan-box h3{
+
+    color:#ffd34f;
+
+    font-size:20px;
+
+    margin-bottom:9px;
+}
+
+
+.scan-box p{
+
+    color:white;
+
+    font-size:13px;
+
+    line-height:1.5;
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
 
 .connect{
+
     background:#eef4fb;
 }
 
+
+/* BUTTON GRID */
+
 .buttons{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:13px;
 }
+
+
+/* COMMON BUTTON */
 
 .btn{
-    min-height:58px;
-    border-radius:14px;
+
+    min-height:59px;
+
+    border-radius:15px;
+
     color:white;
+
     text-decoration:none;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
+    text-align:center;
+
+    padding:10px;
+
     font-size:14px;
-    font-weight:800;
-    box-shadow:0 5px 13px rgba(0,0,0,.12);
+
+    font-weight:900;
+
     border:none;
+
     cursor:pointer;
+
+    box-shadow:
+    0 5px 14px
+    rgba(0,0,0,.12);
 }
 
+
+/* CALL */
+
 .call{
+
     background:#087a35;
 }
 
+
+/* WHATSAPP */
+
 .whatsapp{
+
     background:#16a34a;
 }
 
+
+/* WEBSITE */
+
 .website{
+
     background:#2058a8;
 }
 
+
+/* SHARE */
+
 .share{
+
     background:#111827;
 }
 
+
+/* SAVE CONTACT */
+
 .save{
+
     background:#7c3aed;
-    grid-column:1 / -1;
+
+    grid-column:
+    1 / -1;
 }
 
-/* ================= WHY AK ================= */
+
+/* =====================================================
+   WHY AK ENTERPRISE
+===================================================== */
 
 .why{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:13px;
 }
+
 
 .why-box{
+
     background:white;
-    border-radius:15px;
-    padding:18px 10px;
+
+    border-radius:16px;
+
+    padding:
+    20px
+    10px;
+
     text-align:center;
-    box-shadow:0 4px 13px rgba(0,0,0,.08);
+
+    box-shadow:
+    0 5px 15px
+    rgba(0,0,0,.07);
 }
+
 
 .why-box .icon{
-    font-size:28px;
+
+    font-size:29px;
 }
+
 
 .why-box strong{
+
     font-size:13px;
+
+    line-height:1.4;
 }
 
-/* ================= FOOTER ================= */
+
+/* =====================================================
+   FOOTER
+===================================================== */
 
 .footer{
+
     background:#061a36;
+
     color:white;
+
     text-align:center;
-    padding:25px 15px;
+
+    padding:
+    28px
+    15px;
 }
+
 
 .footer-brand{
-    font-size:22px;
+
+    font-size:23px;
+
     font-weight:900;
 }
+
 
 .footer-phone{
+
     color:#ffd34f;
-    font-size:24px;
+
+    font-size:25px;
+
     font-weight:900;
-    margin:10px 0;
+
+    margin:
+    11px
+    0;
 }
 
+
 .footer-location{
+
     font-size:14px;
 }
 
+
 .footer-line{
-    margin-top:16px;
-    padding-top:15px;
-    border-top:1px solid rgba(255,255,255,.18);
+
+    margin-top:17px;
+
+    padding-top:16px;
+
+    border-top:
+    1px solid
+    rgba(255,255,255,.18);
+
     font-size:12px;
+
+    line-height:1.5;
 }
 
-/* ================= MOBILE ================= */
+
+/* =====================================================
+   SMALL MOBILE SCREEN
+===================================================== */
 
 @media(max-width:360px){
 
     .header h1{
+
         font-size:27px;
     }
 
-    .service{
-        min-height:170px;
+
+    .header h2{
+
+        font-size:16px;
     }
 
-    .btn{
+
+    .service{
+
+        min-height:180px;
+
+        padding:
+        15px
+        7px;
+    }
+
+
+    .service h3{
+
         font-size:13px;
     }
+
+
+    .service p{
+
+        font-size:11px;
+    }
+
+
+    .btn{
+
+        font-size:13px;
+    }
+
+}
+
+
+/* =====================================================
+   EXTRA MOBILE SAFETY
+===================================================== */
+
+@media(max-width:330px){
+
+    .services{
+
+        gap:9px;
+    }
+
+
+    .service{
+
+        min-height:175px;
+    }
+
+
+    .price{
+
+        font-size:10px;
+
+        padding:
+        6px
+        8px;
+    }
+
 }
 
 </style>
+
 </head>
 
 
 <body>
 
+
 <div class="card">
 
-<!-- ================= HEADER ================= -->
+
+<!-- ===================================================
+     HEADER
+=================================================== -->
 
 <header class="header">
 
+
     <div class="badge">
+
         DIGITAL VISITING CARD
+
     </div>
+
 
     <div class="logo">
+
         AK
+
     </div>
+
 
     <h1>
+
         AK Enterprise
+
     </h1>
 
+
     <h2>
+
         आपका Brand, हमारी पहचान
+
     </h2>
 
+
     <p class="tagline">
+
         Design • Digital • Brand • Grow
+
     </p>
 
+
     <div class="location">
+
         📍 Lakhimpur Kheri, Uttar Pradesh
+
     </div>
+
 
 </header>
 
 
-<!-- ================= SERVICES ================= -->
+
+<!-- ===================================================
+     SERVICES
+=================================================== -->
 
 <section class="section">
 
+
     <h2 class="title">
+
         हमारी Digital Services
+
     </h2>
+
 
     <div class="services">
 
 
-        <!-- LOGO -->
+
+        <!-- 1 LOGO DESIGN -->
 
         <div class="service">
 
             <div class="icon">
+
                 🎨
+
             </div>
 
+
             <h3>
+
                 Logo Design
+
             </h3>
 
+
             <p>
-                Professional & Unique Logo Design
+
+                Professional & Unique
+                Logo Design
+
             </p>
 
+
             <span class="price">
+
                 ₹299 से शुरू
+
             </span>
 
         </div>
 
 
-        <!-- GOOGLE BUSINESS -->
+
+        <!-- 2 GOOGLE BUSINESS -->
 
         <div class="service">
 
             <div class="icon">
+
                 📍
+
             </div>
 
-           
+
+            <h3>
+
+                Google Business Profile
+
+            </h3>
+
+
+            <p>
+
+                Google पर Business
+                Setup & Optimization
+
+            </p>
+
+
+            <span class="price">
+
+                ₹499 से शुरू
+
+            </span>
+
+        </div>
+
+
+
+        <!-- 3 WEBSITE -->
+
+        <div class="service">
+
+            <div class="icon">
+
+                🌐
+
+            </div>
+
+
+            <h3>
+
+                Business Website
+
+            </h3>
+
+
+            <p>
+
+                Professional,
+                Responsive & Mobile
+                Friendly Website
+
+            </p>
+
+
+            <span class="price">
+
+                ₹1499 से शुरू
+
+            </span>
+
+        </div>
+
+
+
+        <!-- 4 WHATSAPP BUSINESS -->
+
+        <div class="service">
+
+            <div class="icon">
+
+                💬
+
+            </div>
+
+
+            <h3>
+
+                WhatsApp Business Setup
+
+            </h3>
+
+
+            <p>
+
+                Profile, Catalogue &
+                Business Setup
+
+            </p>
+
+
+            <span class="price">
+
+                ₹299 से शुरू
+
+            </span>
+
+        </div>
+
+
+
+        <!-- 5 DIGITAL VISITING CARD -->
+
+        <div class="service">
+
+            <div class="icon">
+
+                🪪
+
+            </div>
+
+
+            <h3>
+
+                Digital Visiting Card
+
+            </h3>
+
+
+            <p>
+
+                Professional Digital
+                Card Design
+
+                <br>
+
+                JPG / PNG + PDF
+
+                <br>
+
+                Physical Card नहीं
+
+            </p>
+
+
+            <span class="price gold">
+
+                ₹199 केवल
+
+            </span>
+
+        </div>
+
+
+
+        <!-- 6 FESTIVAL POSTER -->
+
+        <div class="service">
+
+            <div class="icon">
+
+                🎉
+
+            </div>
+
+
+            <h3>
+
+                Festival Poster Design
+
+            </h3>
+
+
+            <p>
+
+                Festival, Offer &
+                Event Poster Design
+
+            </p>
+
+
+            <span class="price">
+
+                ₹99 से शुरू
+
+            </span>
+
+        </div>
+
+
+
+        <!-- 7 SOCIAL MEDIA -->
+
+        <div class="service">
+
+            <div class="icon">
+
+                📱
+
+            </div>
+
+
+            <h3>
+
+                Social Media Management
+
+            </h3>
+
+
+            <p>
+
+                Content, Posts,
+                Growth & Business
+                Management
+
+            </p>
+
+
+            <span class="price">
+
+                Custom Plan
+
+            </span>
+
+        </div>
+
+
+
+        <!-- 8 T SHIRT -->
+
+        <div class="service">
+
+            <div class="icon">
+
+                👕
+
+            </div>
+
+
+            <h3>
+
+                T-Shirt Printing
+
+            </h3>
+
+
+            <p>
+
+                Custom T-Shirt Printing
+                & Quality Finishing
+
+            </p>
+
+
+            <span class="price">
+
+                किफायती दाम
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     DIGITAL VISITING CARD INFORMATION
+=================================================== -->
+
+<section class="section">
+
+
+    <div class="info">
+
+
+        <h3>
+
+            🪪 Digital Visiting Card क्या है?
+
+        </h3>
+
+
+        <p>
+
+            एक professional digital card
+            जिसे ग्राहक मोबाइल में खोलकर
+            आपकी पूरी Business Information,
+            Services, Call, WhatsApp और
+            Website एक ही जगह देख सकता है।
+
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+            <strong>
+
+                ₹199 में केवल Digital Card Design
+
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            JPG / PNG + PDF
+
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+            Physical printed visiting cards
+            इसमें शामिल नहीं हैं।
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="scan-box">
+
+
+        <h3>
+
+            📱 QR Code से Digital Card
+
+        </h3>
+
+
+        <p>
+
+            QR Code Scan करें
+
+            <br>
+
+            ↓
+
+            <br>
+
+            AK Enterprise Digital Card खोलें
+
+            <br>
+
+            ↓
+
+            <br>
+
+            Services + Contact + WhatsApp
+            + Website की पूरी जानकारी पाएँ
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ===================================================
+     CONTACT
+=================================================== -->
+
+<section class="section connect">
+
+
+    <h2 class="title">
+
+        सीधे हमसे जुड़ें
+
+    </h2>
+
+
+    <div class="buttons">
+
+
+
+        <!-- CALL -->
+
+        <a
+        class="btn call"
+        href="tel:9555153856">
+
+            📞 Call Now
+
+        </a>
+
+
+
+        <!-- WHATSAPP -->
+
+        <a
+        class="btn whatsapp"
+        href="https://wa.me/919555153856?text=Namaste%20AK%20Enterprise%2C%20mujhe%20Digital%20Services%20ke%20baare%20mein%20jankari%20chahiye."
+        target="_blank">
+
+            💬 WhatsApp
+
+        </a>
+
+
+
+        <!-- WEBSITE -->
+
+        <a
+        class="btn website"
+        href="./">
+
+            🌐 Website
+
+        </a>
+
+
+
+        <!-- SHARE -->
+
+        <button
+        class="btn share"
+        type="button"
+        onclick="shareCard()">
+
+            📤 Share Card
+
+        </button>
+
+
+
+        <!-- SAVE CONTACT -->
+
+        <button
+        class="btn save"
+        type="button"
+        onclick="saveContact()">
+
+            👤 Save AK Enterprise Contact
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     WHY AK ENTERPRISE
+=================================================== -->
+
+<section class="section">
+
+
+    <h2 class="title">
+
+        AK Enterprise आपके लिए क्यों?
+
+    </h2>
+
+
+    <div class="why">
+
+
+
+        <!-- 1 -->
+
+        <div class="why-box">
+
+            <div class="icon">
+
+                💰
+
+            </div>
+
+
+            <strong>
+
+                Affordable Packages
+
+            </strong>
+
+        </div>
+
+
+
+        <!-- 2 -->
+
+        <div class="why-box">
+
+            <div class="icon">
+
+                ✨
+
+            </div>
+
+
+            <strong>
+
+                Professional Design
+
+            </strong>
+
+        </div>
+
+
+
+        <!-- 3 -->
+
+        <div class="why-box">
+
+            <div class="icon">
+
+                🚀
+
+            </div>
+
+
+            <strong>
+
+                Online Growth
+
+            </strong>
+
+        </div>
+
+
+
+        <!-- 4 -->
+
+        <div class="why-box">
+
+            <div class="icon">
+
+                🤝
+
+            </div>
+
+
+            <strong>
+
+                One-Stop Solution
+
+            </strong>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================
+     FOOTER
+=================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-brand">
+
+        AK Enterprise
+
+    </div>
+
+
+    <div class="footer-phone">
+
+        📞 9555153856
+
+    </div>
+
+
+    <div class="footer-location">
+
+        Lakhimpur Kheri,
+        Uttar Pradesh
+
+    </div>
+
+
+    <div class="footer-line">
+
+        सही सोच • सही Design •
+        सही पहचान • Digital सफलता
+
+    </div>
+
+
+</footer>
+
+
+</div>
+
+
+
+<!-- ===================================================
+     JAVASCRIPT
+=================================================== -->
+
+<script>
+
+
+/* =====================================================
+   SHARE DIGITAL CARD
+===================================================== */
+
+function shareCard(){
+
+
+    if(
+        navigator.share
+    ){
+
+
+        navigator.share({
+
+            title:
+            "AK Enterprise",
+
+            text:
+            "AK Enterprise - Digital Services",
+
+            url:
+            window.location.href
+
+        })
+
+        .catch(
+            function(error){
+
+                console.log(error);
+
+            }
+        );
+
+
+    }else{
+
+
+        if(
+            navigator.clipboard
+        ){
+
+
+            navigator.clipboard
+            .writeText(
+                window.location.href
+            );
+
+
+            alert(
+                "Digital Card का Link Copy हो गया है।"
+            );
+
+
+        }else{
+
+
+            alert(
+                "Digital Card का Link: "
+                +
+                window.location.href
+            );
+
+        }
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SAVE CONTACT
+===================================================== */
+
+function saveContact(){
+
+
+    const vcard =
+
+`BEGIN:VCARD
+VERSION:3.0
+FN:AK Enterprise
+ORG:AK Enterprise
+TEL;TYPE=CELL:9555153856
+ADR;TYPE=WORK:;;Lakhimpur Kheri;Uttar Pradesh;India
+NOTE:AK Enterprise - Logo Design, Google Business Profile Setup, Business Website, WhatsApp Business Setup, Digital Visiting Card Design, Festival Poster Design, Social Media Management and T-Shirt Printing.
+END:VCARD`;
+
+
+    const blob =
+    new Blob(
+
+        [vcard],
+
+        {
+            type:
+            "text/vcard"
+        }
+
+    );
+
+
+    const url =
+    URL.createObjectURL(
+        blob
+    );
+
+
+    const link =
+    document.createElement(
+        "a"
+    );
+
+
+    link.href =
+    url;
+
+
+    link.download =
+    "AK-Enterprise-Contact.vcf";
+
+
+    document.body.appendChild(
+        link
+    );
+
+
+    link.click();
+
+
+    document.body.removeChild(
+        link
+    );
+
+
+    setTimeout(
+
+        function(){
+
+            URL.revokeObjectURL(
+                url
+            );
+
+        },
+
+        1000
+
+    );
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
