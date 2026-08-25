@@ -7,6 +7,7 @@
 <title>AK Enterprise | Digital Visiting Card</title>
 
 <style>
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -33,11 +34,11 @@ body{
     box-shadow:0 0 35px rgba(0,0,0,.35);
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 .header{
     background:
-    radial-gradient(circle at top right,rgba(245,197,66,.18),transparent 35%),
+    radial-gradient(circle at top right,rgba(245,197,66,.20),transparent 35%),
     linear-gradient(145deg,#061a36,#0d3d78);
     color:white;
     text-align:center;
@@ -99,7 +100,7 @@ body{
     font-size:13px;
 }
 
-/* SECTION */
+/* ================= SECTION ================= */
 
 .section{
     padding:25px 18px;
@@ -113,7 +114,7 @@ body{
     margin-bottom:20px;
 }
 
-/* SERVICES */
+/* ================= SERVICES ================= */
 
 .services{
     display:grid;
@@ -167,7 +168,30 @@ body{
     background:#d99600;
 }
 
-/* CONTACT */
+/* ================= DIGITAL CARD INFO ================= */
+
+.info{
+    background:
+    linear-gradient(135deg,#fff8d9,#fffdf5);
+    border:2px solid #f5c542;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+}
+
+.info h3{
+    color:#855900;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.info p{
+    font-size:14px;
+    line-height:1.5;
+    color:#454d5b;
+}
+
+/* ================= CONTACT ================= */
 
 .connect{
     background:#eef4fb;
@@ -190,6 +214,8 @@ body{
     font-size:14px;
     font-weight:800;
     box-shadow:0 5px 13px rgba(0,0,0,.12);
+    border:none;
+    cursor:pointer;
 }
 
 .call{
@@ -213,30 +239,7 @@ body{
     grid-column:1 / -1;
 }
 
-/* DIGITAL CARD INFO */
-
-.info{
-    background:
-    linear-gradient(135deg,#fff8d9,#fffdf5);
-    border:2px solid #f5c542;
-    border-radius:18px;
-    padding:20px;
-    text-align:center;
-}
-
-.info h3{
-    color:#855900;
-    font-size:20px;
-    margin-bottom:10px;
-}
-
-.info p{
-    font-size:14px;
-    line-height:1.5;
-    color:#454d5b;
-}
-
-/* WHY AK */
+/* ================= WHY AK ================= */
 
 .why{
     display:grid;
@@ -260,7 +263,7 @@ body{
     font-size:13px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 .footer{
     background:#061a36;
@@ -292,7 +295,7 @@ body{
     font-size:12px;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 
 @media(max-width:360px){
 
@@ -308,6 +311,7 @@ body{
         font-size:13px;
     }
 }
+
 </style>
 </head>
 
@@ -316,7 +320,7 @@ body{
 
 <div class="card">
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header class="header">
 
@@ -347,7 +351,7 @@ body{
 </header>
 
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 
 <section class="section">
 
@@ -358,272 +362,35 @@ body{
     <div class="services">
 
 
-        <div class="service">
-            <div class="icon">🎨</div>
-            <h3>Logo Design</h3>
-            <p>Professional & Unique Logo Design</p>
-            <span class="price">₹299 से शुरू</span>
-        </div>
-
+        <!-- LOGO -->
 
         <div class="service">
-            <div class="icon">📍</div>
-            <h3>Google Business Profile</h3>
-            <p>Google पर Business Setup & Optimization</p>
-            <span class="price">₹499 से शुरू</span>
-        </div>
 
+            <div class="icon">
+                🎨
+            </div>
 
-        <div class="service">
-            <div class="icon">🌐</div>
-            <h3>Business Website</h3>
-            <p>Professional, Responsive & Mobile Friendly Website</p>
-            <span class="price">₹1499 से शुरू</span>
-        </div>
+            <h3>
+                Logo Design
+            </h3>
 
-
-        <div class="service">
-            <div class="icon">💬</div>
-            <h3>WhatsApp Business Setup</h3>
-            <p>Profile, Catalogue & Business Setup</p>
-            <span class="price">₹299 से शुरू</span>
-        </div>
-
-
-        <div class="service">
-            <div class="icon">🪪</div>
-            <h3>Digital Visiting Card</h3>
             <p>
-                Professional Digital Card Design
-                <br>
-                JPG / PNG + PDF
+                Professional & Unique Logo Design
             </p>
-            <span class="price gold">₹199 केवल</span>
+
+            <span class="price">
+                ₹299 से शुरू
+            </span>
+
         </div>
 
+
+        <!-- GOOGLE BUSINESS -->
 
         <div class="service">
-            <div class="icon">🎉</div>
-            <h3>Festival Poster Design</h3>
-            <p>Festival, Offer & Event Poster Design</p>
-            <span class="price">₹99 से शुरू</span>
-        </div>
 
+            <div class="icon">
+                📍
+            </div>
 
-        <div class="service">
-            <div class="icon">📱</div>
-            <h3>Social Media Management</h3>
-            <p>Content, Posts, Growth & Business Management</p>
-            <span class="price">Custom Plan</span>
-        </div>
-
-
-        <div class="service">
-            <div class="icon">👕</div>
-            <h3>T-Shirt Printing</h3>
-            <p>Custom T-Shirt Printing & Quality Finishing</p>
-            <span class="price">किफायती दाम</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- DIGITAL CARD EXPLANATION -->
-
-<section class="section">
-
-    <div class="info">
-
-        <h3>
-            🪪 Digital Visiting Card क्या है?
-        </h3>
-
-        <p>
-            एक ऐसा professional digital card जिसे ग्राहक
-            मोबाइल में खोलकर आपकी पूरी Business Information,
-            Services, Call, WhatsApp और Website एक ही जगह
-            देख सकता है।
-        </p>
-
-        <br>
-
-        <p>
-            <strong>
-            QR Code Scan करें → Digital Card खोलें →
-            सीधे Business से जुड़ें
-            </strong>
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="section connect">
-
-    <h2 class="title">
-        सीधे हमसे जुड़ें
-    </h2>
-
-    <div class="buttons">
-
-
-        <a
-        class="btn call"
-        href="tel:7007733078">
-        📞 Call Now
-        </a>
-
-
-        <a
-        class="btn whatsapp"
-        href="https://wa.me/917007733078?text=Namaste%20AK%20Enterprise%2C%20mujhe%20Digital%20Service%20ke%20baare%20mein%20jankari%20chahiye.">
-        💬 WhatsApp
-        </a>
-
-
-        <a
-        class="btn website"
-        href="./">
-        🌐 Website
-        </a>
-
-
-        <a
-        class="btn share"
-        href="javascript:void(0)"
-        onclick="shareCard()">
-        📤 Share Card
-        </a>
-
-
-        <a
-        class="btn save"
-        href="javascript:void(0)"
-        onclick="saveContact()">
-        👤 Save AK Enterprise Contact
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- WHY AK -->
-
-<section class="section">
-
-    <h2 class="title">
-        AK Enterprise आपके लिए क्यों?
-    </h2>
-
-    <div class="why">
-
-        <div class="why-box">
-            <div class="icon">💰</div>
-            <strong>Affordable Packages</strong>
-        </div>
-
-        <div class="why-box">
-            <div class="icon">✨</div>
-            <strong>Professional Design</strong>
-        </div>
-
-        <div class="why-box">
-            <div class="icon">🚀</div>
-            <strong>Online Growth</strong>
-        </div>
-
-        <div class="why-box">
-            <div class="icon">🤝</div>
-            <strong>One-Stop Solution</strong>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer class="footer">
-
-    <div class="footer-brand">
-        AK Enterprise
-    </div>
-
-    <div class="footer-phone">
-        📞 7007733078
-    </div>
-
-    <div class="footer-location">
-        Lakhimpur Kheri, Uttar Pradesh
-    </div>
-
-    <div class="footer-line">
-        सही सोच • सही Design • सही पहचान • Digital सफलता
-    </div>
-
-</footer>
-
-</div>
-
-
-<script>
-
-function shareCard(){
-
-    if(navigator.share){
-
-        navigator.share({
-            title:"AK Enterprise",
-            text:"AK Enterprise - Digital Services",
-            url:window.location.href
-        });
-
-    }else{
-
-        navigator.clipboard.writeText(window.location.href);
-
-        alert("Digital Card का Link Copy हो गया है।");
-
-    }
-}
-
-
-function saveContact(){
-
-    const vcard =
-`BEGIN:VCARD
-VERSION:3.0
-FN:AK Enterprise
-ORG:AK Enterprise
-TEL;TYPE=CELL:7007733078
-ADR;TYPE=WORK:;;Lakhimpur Kheri;Uttar Pradesh;India
-NOTE:Digital Services - Logo Design, Website, Google Business Profile, WhatsApp Business Setup, Digital Visiting Card, Poster Design, Social Media Management, T-Shirt Printing
-END:VCARD`;
-
-    const blob = new Blob([vcard], {
-        type:"text/vcard"
-    });
-
-    const url = URL.createObjectURL(blob);
-
-    const link = document.createElement("a");
-
-    link.href = url;
-    link.download = "AK-Enterprise.vcf";
-
-    link.click();
-
-    URL.revokeObjectURL(url);
-}
-
-</script>
-
-</body>
-</html>
+           
