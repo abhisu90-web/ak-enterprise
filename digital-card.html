@@ -36,10 +36,12 @@ body{
     box-shadow:0 0 45px rgba(0,0,0,.4);
 }
 
+
 /* ================= HERO ================= */
 
 .hero{
     position:relative;
+    z-index:0;
     text-align:center;
     color:white;
     padding:28px 18px 38px;
@@ -66,12 +68,19 @@ body{
 .hero:after{
     content:"";
     position:absolute;
+    z-index:0;
     left:-10%;
     bottom:-55px;
     width:120%;
     height:100px;
     background:#fff8ef;
     border-radius:50%;
+    pointer-events:none;
+}
+
+.hero > *{
+    position:relative;
+    z-index:1;
 }
 
 .badge{
@@ -139,13 +148,18 @@ body{
     font-size:13px;
 }
 
+
 /* ================= SECTION ================= */
 
 .section{
+    position:relative;
+    z-index:2;
     padding:28px 17px;
 }
 
 .title{
+    position:relative;
+    z-index:3;
     text-align:center;
     color:#4a0d2b;
     font-size:24px;
@@ -157,9 +171,13 @@ body{
     color:#9b1b5a;
 }
 
+
 /* ================= SERVICES ================= */
 
 .services{
+    position:relative;
+    z-index:3;
+
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:12px;
@@ -167,6 +185,7 @@ body{
 
 .service{
     min-height:184px;
+
     background:#fff;
 
     border:1px solid #ead8df;
@@ -221,12 +240,17 @@ body{
         #bd851b,
         #edc463
     );
+
     color:#351c09;
 }
+
 
 /* ================= DIGITAL CARD INFO ================= */
 
 .info{
+    position:relative;
+    z-index:3;
+
     margin-top:18px;
 
     padding:21px;
@@ -261,9 +285,12 @@ body{
     color:#4a0d2b;
 }
 
+
 /* ================= WHY ================= */
 
 .why-section{
+    position:relative;
+    z-index:2;
     background:#fff0f5;
 }
 
@@ -275,6 +302,7 @@ body{
 
 .whybox{
     background:white;
+
     border:1px solid #ead8df;
     border-radius:17px;
 
@@ -304,9 +332,13 @@ body{
     margin-top:4px;
 }
 
+
 /* ================= CONTACT ================= */
 
 .contact{
+    position:relative;
+    z-index:2;
+
     background:
     linear-gradient(
         145deg,
@@ -376,9 +408,13 @@ body{
     );
 }
 
+
 /* ================= FOOTER ================= */
 
 .footer{
+    position:relative;
+    z-index:2;
+
     background:#260916;
     color:white;
     text-align:center;
@@ -421,6 +457,7 @@ body{
     font-size:12px;
 }
 
+
 /* ================= MOBILE ================= */
 
 @media(max-width:350px){
@@ -456,6 +493,7 @@ body{
 <body>
 
 <div class="card">
+
 
 <!-- ================= HEADER ================= -->
 
@@ -498,144 +536,308 @@ body{
     हमारी <span>Digital Services</span>
 </h2>
 
+
 <div class="services">
 
+
 <div class="service">
+
     <div class="icon">🎨</div>
-    <h3>Logo Design</h3>
-    <p>Professional & Unique Logo Design</p>
-    <span class="price">₹299 से शुरू</span>
+
+    <h3>
+        Logo Design
+    </h3>
+
+    <p>
+        Professional & Unique Logo Design
+    </p>
+
+    <span class="price">
+        ₹299 से शुरू
+    </span>
+
 </div>
 
 
+
 <div class="service">
+
     <div class="icon">📍</div>
-    <h3>Google Business Profile</h3>
-    <p>Google पर Business Setup & Optimization</p>
-    <span class="price">₹499 से शुरू</span>
+
+    <h3>
+        Google Business Profile
+    </h3>
+
+    <p>
+        Google पर Business Setup & Optimization
+    </p>
+
+    <span class="price">
+        ₹499 से शुरू
+    </span>
+
 </div>
 
 
+
 <div class="service">
+
     <div class="icon">🌐</div>
-    <h3>Business Website</h3>
-    <p>Professional, Responsive & Mobile Friendly Website</p>
-    <span class="price">₹1499 से शुरू</span>
+
+    <h3>
+        Business Website
+    </h3>
+
+    <p>
+        Professional, Responsive & Mobile Friendly Website
+    </p>
+
+    <span class="price">
+        ₹1499 से शुरू
+    </span>
+
 </div>
 
 
+
 <div class="service">
+
     <div class="icon">💬</div>
-    <h3>WhatsApp Business Setup</h3>
-    <p>Profile, Catalogue & Business Setup</p>
-    <span class="price">₹299 से शुरू</span>
+
+    <h3>
+        WhatsApp Business Setup
+    </h3>
+
+    <p>
+        Profile, Catalogue & Business Setup
+    </p>
+
+    <span class="price">
+        ₹299 से शुरू
+    </span>
+
 </div>
 
 
+
 <div class="service">
+
     <div class="icon">🪪</div>
-    <h3>Digital Visiting Card</h3>
+
+    <h3>
+        Digital Visiting Card
+    </h3>
+
     <p>
         Professional Digital Card Design<br>
         JPG / PNG + PDF<br>
         Physical Card नहीं
     </p>
-    <span class="price gold">₹199 केवल</span>
+
+    <span class="price gold">
+        ₹199 केवल
+    </span>
+
 </div>
 
 
+
 <div class="service">
+
     <div class="icon">🎉</div>
-    <h3>Festival Poster Design</h3>
-    <p>Festival, Offer & Event Poster Design</p>
-    <span class="price">₹99 से शुरू</span>
+
+    <h3>
+        Festival Poster Design
+    </h3>
+
+    <p>
+        Festival, Offer & Event Poster Design
+    </p>
+
+    <span class="price">
+        ₹99 से शुरू
+    </span>
+
 </div>
 
 
+
 <div class="service">
+
     <div class="icon">📱</div>
-    <h3>Social Media Management</h3>
-    <p>Content, Posts, Growth & Business Management</p>
-    <span class="price">Custom Plan</span>
+
+    <h3>
+        Social Media Management
+    </h3>
+
+    <p>
+        Content, Posts, Growth & Business Management
+    </p>
+
+    <span class="price">
+        Custom Plan
+    </span>
+
 </div>
+
 
 
 <div class="service">
+
     <div class="icon">👕</div>
-    <h3>T-Shirt Printing</h3>
-    <p>Custom T-Shirt Printing & Quality Finishing</p>
-    <span class="price">किफायती दाम</span>
-</div>
+
+    <h3>
+        T-Shirt Printing
+    </h3>
+
+    <p>
+        Custom T-Shirt Printing & Quality Finishing
+    </p>
+
+    <span class="price">
+        किफायती दाम
+    </span>
 
 </div>
 
 
-<!-- DIGITAL CARD INFO -->
+</div>
+
+
+
+<!-- ================= DIGITAL VISITING CARD INFO ================= -->
 
 <div class="info">
 
-<h3>
-    🪪 Digital Visiting Card — क्या है?
-</h3>
+    <h3>
+        🪪 Digital Visiting Card — क्या है?
+    </h3>
 
-<p>
-एक professional digital card जिसमें आपकी
-<strong>Business Information, Services, Call,
-WhatsApp और Website</strong> एक ही जगह दिखाई
-जा सकती है।
-</p>
+    <p>
+        एक professional digital card जिसमें आपकी
+        <strong>
+        Business Information, Services, Call,
+        WhatsApp और Website
+        </strong>
+        एक ही जगह दिखाई जा सकती है।
+    </p>
 
-<p style="margin-top:9px">
-<strong>₹199 में केवल Digital Card Design</strong><br>
-JPG / PNG + PDF
-</p>
+    <p style="margin-top:9px">
 
-<p style="margin-top:7px">
-Physical printed visiting cards इसमें शामिल नहीं हैं।
-</p>
+        <strong>
+            ₹199 में केवल Digital Card Design
+        </strong>
+
+        <br>
+
+        JPG / PNG + PDF
+
+    </p>
+
+    <p style="margin-top:7px">
+
+        Physical printed visiting cards इसमें शामिल नहीं हैं।
+
+    </p>
 
 </div>
 
 </section>
 
 
-<!-- ================= WHY AK ================= -->
+
+<!-- ================= WHY AK ENTERPRISE ================= -->
 
 <section class="section why-section">
 
 <h2 class="title">
-    AK Enterprise <span>आपके लिए क्यों?</span>
+
+    AK Enterprise
+    <span>
+        आपके लिए क्यों?
+    </span>
+
 </h2>
+
 
 <div class="why">
 
-<div class="whybox">
-    <div class="icon">💰</div>
-    <b>Affordable Packages</b>
-    <small>Budget-friendly solutions</small>
-</div>
 
 <div class="whybox">
-    <div class="icon">✨</div>
-    <b>Professional Design</b>
-    <small>Premium brand look</small>
+
+    <div class="icon">
+        💰
+    </div>
+
+    <b>
+        Affordable Packages
+    </b>
+
+    <small>
+        Budget-friendly solutions
+    </small>
+
 </div>
 
-<div class="whybox">
-    <div class="icon">🚀</div>
-    <b>Online Growth</b>
-    <small>Digital visibility</small>
-</div>
+
 
 <div class="whybox">
-    <div class="icon">🤝</div>
-    <b>One-Stop Solution</b>
-    <small>Design to branding</small>
+
+    <div class="icon">
+        ✨
+    </div>
+
+    <b>
+        Professional Design
+    </b>
+
+    <small>
+        Premium brand look
+    </small>
+
 </div>
+
+
+
+<div class="whybox">
+
+    <div class="icon">
+        🚀
+    </div>
+
+    <b>
+        Online Growth
+    </b>
+
+    <small>
+        Digital visibility
+    </small>
+
+</div>
+
+
+
+<div class="whybox">
+
+    <div class="icon">
+        🤝
+    </div>
+
+    <b>
+        One-Stop Solution
+    </b>
+
+    <small>
+        Design to branding
+    </small>
+
+</div>
+
 
 </div>
 
 </section>
+
 
 
 <!-- ================= CONTACT ================= -->
@@ -643,101 +845,153 @@ Physical printed visiting cards इसमें शामिल नहीं ह
 <section class="contact">
 
 <h2 class="title">
-    सीधे <span>हमसे जुड़ें</span>
+
+    सीधे
+    <span>
+        हमसे जुड़ें
+    </span>
+
 </h2>
 
+
 <div class="buttons">
+
 
 <a
 class="btn call"
 href="tel:+919555153856">
-📞 Call Now
+
+    📞 Call Now
+
 </a>
+
 
 
 <a
 class="btn whatsapp"
 href="https://wa.me/919555153856?text=Namaste%20AK%20Enterprise%2C%20mujhe%20aapki%20services%20ke%20baare%20mein%20jankari%20chahiye."
 target="_blank">
-💬 WhatsApp
+
+    💬 WhatsApp
+
 </a>
+
 
 
 <a
 class="btn website"
 href="https://abhisu90-web.github.io/ak-enterprise/"
 target="_blank">
-🌐 Website
+
+    🌐 Website
+
 </a>
+
 
 
 <button
 class="btn share"
 onclick="shareCard()">
-📤 Share Card
+
+    📤 Share Card
+
 </button>
+
 
 
 <button
 class="btn save"
 onclick="saveContact()">
-👤 Save AK Enterprise Contact
+
+    👤 Save AK Enterprise Contact
+
 </button>
+
 
 </div>
 
 </section>
 
 
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="footer">
 
+
 <div class="footer-brand">
+
     AK Enterprise
+
 </div>
+
 
 <div class="phone">
+
     📞 9555153856
+
 </div>
+
 
 <div class="address">
+
     Lakhimpur Kheri, Uttar Pradesh
+
 </div>
+
 
 <div class="footer-line">
+
     Digital Graphics • Branding • T-Shirt Printing
+
     <br>
+
     आपके Business की Digital पहचान बनाने के लिए
+
 </div>
 
+
 <div class="footer-tag">
+
     सही सोच • सही Design • सही पहचान
+
 </div>
+
 
 </footer>
 
+
 </div>
+
 
 
 <script>
 
-/* ================= SHARE ================= */
+/* ================= SHARE CARD ================= */
 
 function shareCard(){
 
     const shareData = {
+
         title: "AK Enterprise",
-        text: "AK Enterprise — Digital Graphics, Branding & T-Shirt Printing",
-        url: window.location.href
+
+        text:
+        "AK Enterprise — Digital Graphics, Branding & T-Shirt Printing",
+
+        url:
+        window.location.href
+
     };
+
 
     if(navigator.share){
 
         navigator.share(shareData)
         .catch(function(){});
 
-    }else{
+    }
+
+    else{
 
         if(navigator.clipboard){
 
@@ -750,7 +1004,9 @@ function shareCard(){
         alert("Digital Card Link Copied!");
 
     }
+
 }
+
 
 
 /* ================= SAVE CONTACT ================= */
@@ -768,30 +1024,45 @@ URL:https://abhisu90-web.github.io/ak-enterprise/
 NOTE:Digital Graphics | Branding | T-Shirt Printing
 END:VCARD`;
 
+
     const blob = new Blob(
+
         [vcard],
+
         {
-            type:"text/vcard;charset=utf-8"
+            type:
+            "text/vcard;charset=utf-8"
         }
+
     );
+
 
     const url =
         URL.createObjectURL(blob);
 
+
     const link =
         document.createElement("a");
 
+
     link.href = url;
+
+
     link.download =
         "AK-Enterprise-Contact.vcf";
 
+
     document.body.appendChild(link);
+
 
     link.click();
 
+
     link.remove();
 
+
     URL.revokeObjectURL(url);
+
 }
 
 </script>
