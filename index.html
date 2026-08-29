@@ -7,7 +7,7 @@
 <title>AK Enterprise | Digital Branding, Printing & Business Solutions</title>
 
 <meta name="description"
-content="AK Enterprise provides professional logo design, business websites, Google Business Profile, WhatsApp Business setup, digital visiting cards, poster design, T-shirt printing and business branding solutions in Lakhimpur Kheri.">
+content="AK Enterprise - Digital Branding, Graphic Design, Website Development, Google Business, WhatsApp Business, T-Shirt Printing and Digital Solutions in Lakhimpur Kheri.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -33,38 +33,29 @@ overflow-x:hidden;
 :root{
 --gold:#d4af37;
 --gold2:#f4d77a;
---dark:#080808;
---card:#111111;
---muted:#b7b7b7;
 --green:#25D366;
 }
 
 a{
 text-decoration:none;
+color:inherit;
 }
 
 section{
 padding:90px 6%;
-position:relative;
-}
-
-.container{
-max-width:1250px;
-margin:auto;
 }
 
 .section-head{
 text-align:center;
-max-width:750px;
+max-width:760px;
 margin:0 auto 55px;
 }
 
 .section-head .small{
 color:var(--gold2);
-font-size:14px;
+font-size:13px;
 font-weight:700;
 letter-spacing:3px;
-text-transform:uppercase;
 margin-bottom:10px;
 }
 
@@ -79,6 +70,7 @@ color:#aaa;
 line-height:1.8;
 }
 
+
 /* NAVBAR */
 
 .navbar{
@@ -87,8 +79,8 @@ top:0;
 left:0;
 width:100%;
 z-index:5000;
-padding:16px 6%;
-background:rgba(5,5,5,.78);
+padding:14px 6%;
+background:rgba(5,5,5,.84);
 backdrop-filter:blur(16px);
 border-bottom:1px solid rgba(212,175,55,.12);
 }
@@ -102,10 +94,18 @@ justify-content:space-between;
 }
 
 .brand{
-font-size:23px;
+display:flex;
+align-items:center;
+gap:10px;
+font-size:21px;
 font-weight:800;
-color:#fff;
-letter-spacing:.5px;
+}
+
+.brand img{
+width:42px;
+height:42px;
+object-fit:contain;
+border-radius:50%;
 }
 
 .brand span{
@@ -114,13 +114,13 @@ color:var(--gold);
 
 .nav-links{
 display:flex;
-gap:28px;
+gap:25px;
 align-items:center;
 }
 
 .nav-links a{
 color:#ddd;
-font-size:14px;
+font-size:13px;
 font-weight:500;
 transition:.3s;
 }
@@ -145,16 +145,24 @@ display:none;
 
 }
 
+
 /* HERO */
 
 .hero{
 min-height:100vh;
 display:flex;
 align-items:center;
-padding:140px 6% 90px;
+padding:135px 6% 85px;
+
 background:
-linear-gradient(90deg,rgba(0,0,0,.94) 15%,rgba(0,0,0,.75) 55%,rgba(0,0,0,.88)),
-url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85');
+linear-gradient(
+90deg,
+rgba(0,0,0,.96) 8%,
+rgba(0,0,0,.72) 55%,
+rgba(0,0,0,.92)
+),
+url('assets/business-growth.png');
+
 background-size:cover;
 background-position:center;
 }
@@ -163,29 +171,35 @@ background-position:center;
 max-width:1250px;
 width:100%;
 margin:auto;
+
 display:grid;
-grid-template-columns:1.15fr .85fr;
-gap:60px;
+grid-template-columns:1.05fr .95fr;
+
+gap:55px;
 align-items:center;
 }
 
 .hero-badge{
 display:inline-flex;
-padding:8px 15px;
-border:1px solid rgba(212,175,55,.4);
+padding:8px 14px;
+
+border:1px solid rgba(212,175,55,.45);
 border-radius:30px;
+
 color:var(--gold2);
-font-size:13px;
+font-size:12px;
 font-weight:600;
+
 background:rgba(212,175,55,.07);
+
 margin-bottom:20px;
 }
 
 .hero h1{
-font-size:clamp(42px,6vw,76px);
-line-height:1.05;
+font-size:clamp(42px,6vw,72px);
+line-height:1.06;
 font-weight:800;
-margin-bottom:22px;
+margin-bottom:20px;
 }
 
 .hero h1 span{
@@ -193,26 +207,28 @@ color:var(--gold);
 }
 
 .hero-text{
-font-size:18px;
+font-size:17px;
 color:#d0d0d0;
 line-height:1.8;
-max-width:700px;
+max-width:680px;
 }
 
 .hero-buttons{
 display:flex;
-gap:14px;
+gap:13px;
 flex-wrap:wrap;
-margin-top:32px;
+margin-top:30px;
 }
 
 .btn{
-padding:14px 25px;
+padding:14px 24px;
 border-radius:50px;
 font-weight:700;
+
 display:inline-flex;
 align-items:center;
 gap:8px;
+
 transition:.3s;
 }
 
@@ -238,59 +254,74 @@ transform:translateY(-3px);
 .hero-services{
 display:flex;
 flex-wrap:wrap;
-gap:9px;
-margin-top:28px;
+gap:8px;
+margin-top:25px;
 }
 
 .hero-services span{
-font-size:12px;
+font-size:11px;
 color:#ddd;
-padding:8px 12px;
+
+padding:7px 11px;
+
 border-radius:20px;
+
 background:rgba(255,255,255,.07);
 border:1px solid rgba(255,255,255,.08);
 }
 
-/* HERO VISUAL */
+
+/* HERO IMAGE */
 
 .hero-visual{
 position:relative;
 }
 
 .visual-main{
-border-radius:28px;
+border-radius:25px;
 overflow:hidden;
-border:1px solid rgba(212,175,55,.35);
-box-shadow:0 25px 70px rgba(0,0,0,.6);
+
+border:1px solid rgba(212,175,55,.4);
+
+box-shadow:
+0 25px 70px rgba(0,0,0,.6);
+
+background:#111;
 }
 
 .visual-main img{
 width:100%;
-height:470px;
+height:500px;
 object-fit:cover;
 display:block;
 }
 
 .visual-card{
 position:absolute;
-bottom:-25px;
-left:-35px;
+bottom:-22px;
+left:-25px;
+
 background:#111;
+
 border:1px solid rgba(212,175,55,.35);
-border-radius:18px;
-padding:18px 22px;
-box-shadow:0 15px 40px rgba(0,0,0,.6);
+
+border-radius:17px;
+
+padding:16px 20px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.6);
 }
 
 .visual-card strong{
 display:block;
 color:var(--gold);
-font-size:25px;
+font-size:24px;
 }
 
 .visual-card span{
 color:#aaa;
-font-size:12px;
+font-size:11px;
 }
 
 @media(max-width:900px){
@@ -299,12 +330,8 @@ font-size:12px;
 grid-template-columns:1fr;
 }
 
-.hero-visual{
-margin-top:30px;
-}
-
 .visual-main img{
-height:350px;
+height:390px;
 }
 
 .visual-card{
@@ -313,10 +340,14 @@ left:15px;
 
 }
 
+
 /* STATS */
 
 .stats{
+padding:0;
+
 background:#0d0d0d;
+
 border-top:1px solid #1c1c1c;
 border-bottom:1px solid #1c1c1c;
 }
@@ -324,13 +355,16 @@ border-bottom:1px solid #1c1c1c;
 .stats-grid{
 max-width:1100px;
 margin:auto;
+
 display:grid;
 grid-template-columns:repeat(4,1fr);
 }
 
 .stat{
 text-align:center;
-padding:25px;
+
+padding:23px;
+
 border-right:1px solid #222;
 }
 
@@ -339,14 +373,14 @@ border:none;
 }
 
 .stat h3{
-font-size:30px;
+font-size:29px;
 color:var(--gold);
 }
 
 .stat p{
-font-size:12px;
+font-size:11px;
 color:#999;
-margin-top:4px;
+margin-top:3px;
 }
 
 @media(max-width:650px){
@@ -361,33 +395,42 @@ border-right:none;
 
 }
 
+
 /* ABOUT */
 
 .about-grid{
 max-width:1200px;
 margin:auto;
+
 display:grid;
 grid-template-columns:.9fr 1.1fr;
-gap:60px;
+
+gap:55px;
+
 align-items:center;
 }
 
 .about-img{
-border-radius:25px;
+border-radius:24px;
 overflow:hidden;
+
 border:1px solid #292929;
+
+background:#111;
 }
 
 .about-img img{
 width:100%;
-height:450px;
+height:460px;
+
 object-fit:cover;
+
 display:block;
 }
 
 .about-content h3{
-font-size:32px;
-margin-bottom:18px;
+font-size:31px;
+margin-bottom:17px;
 }
 
 .about-content h3 span{
@@ -397,22 +440,28 @@ color:var(--gold);
 .about-content p{
 color:#aaa;
 line-height:1.9;
-margin-bottom:16px;
+margin-bottom:14px;
 }
 
 .points{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:14px;
-margin-top:25px;
+
+gap:12px;
+
+margin-top:22px;
 }
 
 .point{
 background:#111;
+
 border:1px solid #222;
-padding:14px;
-border-radius:13px;
-font-size:13px;
+
+padding:13px;
+
+border-radius:12px;
+
+font-size:12px;
 color:#ddd;
 }
 
@@ -427,10 +476,11 @@ grid-template-columns:1fr;
 }
 
 .about-img img{
-height:330px;
+height:350px;
 }
 
 }
+
 
 /* SERVICES */
 
@@ -441,67 +491,88 @@ background:#0b0b0b;
 .services-grid{
 max-width:1250px;
 margin:auto;
+
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:20px;
+
+gap:19px;
 }
 
 .service{
-background:linear-gradient(145deg,#151515,#0e0e0e);
+background:
+linear-gradient(
+145deg,
+#151515,
+#0e0e0e
+);
+
 border:1px solid #252525;
+
 border-radius:20px;
+
 overflow:hidden;
+
 transition:.35s;
 }
 
 .service:hover{
-transform:translateY(-8px);
-border-color:rgba(212,175,55,.65);
-box-shadow:0 20px 45px rgba(0,0,0,.45);
+transform:translateY(-7px);
+
+border-color:
+rgba(212,175,55,.65);
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.45);
 }
 
 .service-img{
-height:190px;
+height:195px;
 overflow:hidden;
+background:#111;
 }
 
 .service-img img{
 width:100%;
 height:100%;
+
 object-fit:cover;
+
 transition:.5s;
 }
 
 .service:hover .service-img img{
-transform:scale(1.08);
+transform:scale(1.05);
 }
 
 .service-content{
-padding:22px;
+padding:21px;
 }
 
 .service-number{
 color:var(--gold);
-font-size:12px;
+font-size:11px;
 font-weight:700;
 }
 
 .service h3{
-font-size:19px;
-margin:7px 0 9px;
+font-size:18px;
+margin:7px 0 8px;
 }
 
 .service p{
-font-size:13px;
+font-size:12px;
 line-height:1.7;
 color:#999;
 }
 
 .service-link{
 display:inline-block;
-margin-top:15px;
+
+margin-top:14px;
+
 color:var(--gold2);
-font-size:12px;
+
+font-size:11px;
 font-weight:700;
 }
 
@@ -521,54 +592,71 @@ grid-template-columns:1fr;
 
 }
 
+
 /* HOW WE WORK */
 
 .process-grid{
 max-width:1100px;
 margin:auto;
+
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:18px;
+
+gap:17px;
 }
 
 .process{
 text-align:center;
-padding:28px 20px;
+
+padding:27px 18px;
+
 background:#111;
+
 border:1px solid #242424;
+
 border-radius:20px;
+
 position:relative;
 }
 
 .process-icon{
-width:60px;
-height:60px;
+width:58px;
+height:58px;
+
 border-radius:50%;
+
 display:flex;
 align-items:center;
 justify-content:center;
-margin:0 auto 18px;
+
+margin:0 auto 17px;
+
 background:rgba(212,175,55,.1);
+
 border:1px solid rgba(212,175,55,.4);
-font-size:25px;
+
+font-size:24px;
 }
 
 .process h3{
-font-size:17px;
-margin-bottom:8px;
+font-size:16px;
+margin-bottom:7px;
 }
 
 .process p{
-font-size:12px;
+font-size:11px;
 line-height:1.7;
 color:#999;
 }
 
 .process .num{
 position:absolute;
-top:12px;
-right:15px;
-font-size:11px;
+
+top:11px;
+right:14px;
+
+font-size:10px;
+
 color:#555;
 }
 
@@ -588,63 +676,75 @@ grid-template-columns:1fr;
 
 }
 
-/* SHOWCASE */
+
+/* PORTFOLIO */
 
 .showcase{
-background:
-linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.94)),
-url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1800&q=85');
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
+background:#0a0a0a;
 }
 
 .showcase-grid{
 max-width:1200px;
 margin:auto;
+
 display:grid;
 grid-template-columns:repeat(3,1fr);
+
 gap:20px;
 }
 
 .showcase-item{
-height:270px;
+height:300px;
+
 border-radius:20px;
+
 overflow:hidden;
+
 position:relative;
+
 border:1px solid #292929;
+
+background:#111;
 }
 
 .showcase-item img{
 width:100%;
 height:100%;
+
 object-fit:cover;
+
 transition:.5s;
 }
 
 .showcase-item:hover img{
-transform:scale(1.08);
+transform:scale(1.05);
 }
 
 .showcase-label{
 position:absolute;
-left:15px;
-right:15px;
-bottom:15px;
-padding:13px;
-border-radius:12px;
+
+left:14px;
+right:14px;
+bottom:14px;
+
+padding:12px;
+
+border-radius:11px;
+
 background:rgba(0,0,0,.78);
+
 backdrop-filter:blur(8px);
+
 border:1px solid rgba(255,255,255,.1);
 }
 
 .showcase-label strong{
 display:block;
-font-size:14px;
+font-size:13px;
 }
 
 .showcase-label span{
-font-size:11px;
+font-size:10px;
 color:#aaa;
 }
 
@@ -664,68 +764,90 @@ grid-template-columns:1fr;
 
 }
 
-/* PRICING */
+
+/* OFFERS */
 
 .offer-grid{
 max-width:1000px;
 margin:auto;
+
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:20px;
+
+gap:19px;
 }
 
 .offer{
 background:#111;
+
 border:1px solid #272727;
+
 border-radius:20px;
-padding:28px;
+
+padding:27px;
+
 text-align:center;
+
 transition:.3s;
 }
 
 .offer:hover{
 border-color:var(--gold);
+
 transform:translateY(-5px);
 }
 
 .offer .tag{
 display:inline-block;
+
 font-size:10px;
 font-weight:700;
+
 letter-spacing:1px;
+
 color:#000;
+
 background:var(--gold);
+
 padding:5px 10px;
+
 border-radius:20px;
-margin-bottom:16px;
+
+margin-bottom:15px;
 }
 
 .offer h3{
-font-size:19px;
-margin-bottom:10px;
+font-size:18px;
+margin-bottom:8px;
 }
 
 .price{
-font-size:34px;
+font-size:33px;
 font-weight:800;
+
 color:var(--gold);
 }
 
 .offer p{
-font-size:12px;
+font-size:11px;
+
 color:#999;
+
 line-height:1.7;
-margin-top:10px;
+
+margin-top:9px;
 }
 
 @media(max-width:700px){
 
 .offer-grid{
 grid-template-columns:1fr;
+
 max-width:450px;
 }
 
 }
+
 
 /* WHY US */
 
@@ -736,31 +858,40 @@ background:#0b0b0b;
 .why-grid{
 max-width:1100px;
 margin:auto;
+
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:20px;
+
+gap:19px;
 }
 
 .why-card{
-padding:28px;
+padding:27px;
+
 border-radius:18px;
+
 background:#111;
+
 border:1px solid #252525;
 }
 
 .why-icon{
-font-size:30px;
-margin-bottom:15px;
+font-size:28px;
+
+margin-bottom:13px;
 }
 
 .why-card h3{
-font-size:18px;
-margin-bottom:9px;
+font-size:17px;
+
+margin-bottom:8px;
 }
 
 .why-card p{
-font-size:13px;
+font-size:12px;
+
 line-height:1.7;
+
 color:#999;
 }
 
@@ -772,6 +903,7 @@ grid-template-columns:1fr;
 
 }
 
+
 /* CTA */
 
 .cta{
@@ -781,34 +913,62 @@ padding:80px 6%;
 .cta-box{
 max-width:1150px;
 margin:auto;
-border-radius:28px;
-padding:65px 40px;
+
+border-radius:27px;
+
+padding:62px 35px;
+
 text-align:center;
+
 background:
-linear-gradient(135deg,rgba(212,175,55,.15),rgba(255,255,255,.03)),
+linear-gradient(
+135deg,
+rgba(212,175,55,.15),
+rgba(255,255,255,.03)
+),
 #111;
+
 border:1px solid rgba(212,175,55,.35);
 }
 
 .cta-box h2{
-font-size:42px;
-margin-bottom:14px;
+font-size:40px;
+
+margin-bottom:13px;
 }
 
 .cta-box p{
 color:#aaa;
-max-width:650px;
+
+max-width:680px;
+
 margin:auto;
+
 line-height:1.8;
+
+font-size:13px;
 }
 
 .cta-buttons{
 display:flex;
+
 justify-content:center;
+
 gap:12px;
+
 flex-wrap:wrap;
-margin-top:28px;
+
+margin-top:27px;
 }
+
+@media(max-width:600px){
+
+.cta-box h2{
+font-size:30px;
+}
+
+}
+
 
 /* CONTACT */
 
@@ -819,31 +979,40 @@ background:#080808;
 .contact-grid{
 max-width:1000px;
 margin:auto;
+
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:20px;
+
+gap:19px;
 }
 
 .contact-card{
-padding:25px;
+padding:24px;
+
 text-align:center;
+
 background:#111;
+
 border:1px solid #242424;
+
 border-radius:18px;
 }
 
 .contact-card .icon{
-font-size:28px;
-margin-bottom:10px;
+font-size:27px;
+
+margin-bottom:9px;
 }
 
 .contact-card h3{
-font-size:16px;
-margin-bottom:6px;
+font-size:15px;
+
+margin-bottom:5px;
 }
 
 .contact-card p{
-font-size:13px;
+font-size:12px;
+
 color:#999;
 }
 
@@ -851,37 +1020,47 @@ color:#999;
 
 .contact-grid{
 grid-template-columns:1fr;
+
 max-width:450px;
 }
 
 }
 
+
 /* FOOTER */
 
 footer{
 background:#030303;
+
 padding:45px 6% 25px;
+
 border-top:1px solid #1d1d1d;
 }
 
 .footer-inner{
 max-width:1200px;
 margin:auto;
+
 display:grid;
 grid-template-columns:1.5fr 1fr 1fr;
+
 gap:40px;
 }
 
 .footer h3{
 color:var(--gold);
+
 margin-bottom:12px;
 }
 
 .footer p,
 .footer a{
 font-size:12px;
-color:#888;
+
+color:#aaa;
+
 line-height:2;
+
 display:block;
 }
 
@@ -891,10 +1070,15 @@ color:var(--gold);
 
 .copyright{
 text-align:center;
+
 border-top:1px solid #171717;
+
 margin-top:35px;
+
 padding-top:20px;
+
 font-size:11px;
+
 color:#666;
 }
 
@@ -906,21 +1090,31 @@ grid-template-columns:1fr;
 
 }
 
+
 /* FLOATING BUTTONS */
 
 .float-call,
 .float-wa{
 position:fixed;
+
 right:18px;
+
 z-index:3000;
+
 width:55px;
 height:55px;
+
 border-radius:50%;
+
 display:flex;
+
 align-items:center;
 justify-content:center;
+
 font-size:22px;
-box-shadow:0 8px 25px rgba(0,0,0,.5);
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.5);
 }
 
 .float-call{
@@ -933,60 +1127,82 @@ bottom:18px;
 background:var(--green);
 }
 
-.float-call:hover,
-.float-wa:hover{
-transform:scale(1.08);
-}
 
 /* POPUP */
 
 .popup{
 position:fixed;
+
 inset:0;
+
 background:rgba(0,0,0,.88);
+
 backdrop-filter:blur(8px);
+
 display:flex;
+
 align-items:center;
 justify-content:center;
+
 z-index:9999;
+
 padding:20px;
 }
 
 .popup-box{
 width:100%;
+
 max-width:420px;
+
 background:#111;
+
 border:1px solid var(--gold);
+
 border-radius:25px;
+
 padding:35px;
+
 text-align:center;
-box-shadow:0 25px 80px rgba(0,0,0,.7);
+
+box-shadow:
+0 25px 80px rgba(0,0,0,.7);
 }
 
 .popup-logo{
 font-size:13px;
+
 letter-spacing:3px;
+
 color:var(--gold);
+
 font-weight:700;
+
 margin-bottom:10px;
 }
 
 .popup-box h2{
 font-size:27px;
+
 margin-bottom:10px;
 }
 
 .popup-box .sub{
 color:#999;
+
 font-size:13px;
+
 margin-bottom:20px;
 }
 
 .popup-offer{
 padding:13px;
+
 border-radius:12px;
+
 background:#181818;
+
 margin:8px 0;
+
 border:1px solid #252525;
 }
 
@@ -996,13 +1212,20 @@ color:var(--gold);
 
 .popup-box button{
 margin-top:22px;
+
 border:none;
+
 padding:12px 25px;
+
 border-radius:30px;
+
 background:var(--gold);
+
 font-weight:800;
+
 cursor:pointer;
 }
+
 
 /* MOBILE */
 
@@ -1014,11 +1237,6 @@ padding:70px 5%;
 
 .section-head h2{
 font-size:32px;
-}
-
-.hero{
-padding-left:5%;
-padding-right:5%;
 }
 
 .hero h1{
@@ -1034,7 +1252,9 @@ font-size:15px;
 </style>
 </head>
 
+
 <body>
+
 
 <!-- POPUP -->
 
@@ -1042,9 +1262,13 @@ font-size:15px;
 
 <div class="popup-box">
 
-<div class="popup-logo">AK ENTERPRISE</div>
+<div class="popup-logo">
+AK ENTERPRISE
+</div>
 
-<h2>Build Your Business Brand</h2>
+<h2>
+Build Your Business Brand
+</h2>
 
 <p class="sub">
 Professional digital & branding solutions for local businesses.
@@ -1062,11 +1286,13 @@ Digital Visiting Card — <strong>₹199</strong>
 Festival Poster — <strong>₹99</strong>
 </div>
 
-<p style="font-size:11px;color:#777;margin-top:12px;">
+<p style="font-size:11px;color:#777;margin-top:12px">
 Digital Visiting Card = Design Only (JPG/PNG + PDF)
 </p>
 
-<button onclick="closePopup()">Explore AK Enterprise</button>
+<button onclick="closePopup()">
+Explore AK Enterprise
+</button>
 
 </div>
 
@@ -1080,19 +1306,33 @@ Digital Visiting Card = Design Only (JPG/PNG + PDF)
 <div class="nav-inner">
 
 <a href="#home" class="brand">
+
+<img src="assets/ak-logo.png"
+alt="AK Enterprise Logo">
+
 AK <span>ENTERPRISE</span>
+
 </a>
+
 
 <div class="nav-links">
 
 <a href="#about">About</a>
+
 <a href="#services">Services</a>
+
 <a href="#process">How We Work</a>
+
 <a href="#portfolio">Portfolio</a>
+
 <a href="#contact">Contact</a>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20know%20about%20your%20services." class="nav-cta">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20know%20about%20your%20services."
+class="nav-cta">
+
 WhatsApp
+
 </a>
 
 </div>
@@ -1108,42 +1348,71 @@ WhatsApp
 
 <div class="hero-inner">
 
+
 <div>
 
 <div class="hero-badge">
+
 ✦ DIGITAL BRANDING • PRINTING • BUSINESS SOLUTIONS
+
 </div>
 
+
 <h1>
+
 Make Your Business<br>
+
 Look <span>Professional.</span>
+
 </h1>
 
+
 <p class="hero-text">
-From logo to website, Google presence, WhatsApp Business,
-promotional designs and T-shirt printing —
-<strong>AK Enterprise</strong> helps your business build a professional identity.
+
+From logo to website, Google presence,
+WhatsApp Business, promotional designs
+and T-shirt printing —
+
+<strong>AK Enterprise</strong>
+helps your business build a professional identity.
+
 </p>
+
 
 <div class="hero-buttons">
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20discuss%20my%20business%20requirement." class="btn btn-wa">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20discuss%20my%20business%20requirement."
+class="btn btn-wa">
+
 💬 Get Started on WhatsApp
+
 </a>
 
-<a href="tel:9555153856" class="btn btn-gold">
+
+<a
+href="tel:9555153856"
+class="btn btn-gold">
+
 📞 Call Now
+
 </a>
 
 </div>
+
 
 <div class="hero-services">
 
 <span>Logo Design</span>
+
 <span>Website</span>
+
 <span>Google Business</span>
+
 <span>WhatsApp Setup</span>
+
 <span>Poster Design</span>
+
 <span>T-Shirt Printing</span>
 
 </div>
@@ -1155,19 +1424,25 @@ promotional designs and T-shirt printing —
 
 <div class="visual-main">
 
-<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85"
-alt="Professional business branding">
+<img
+src="assets/business-growth.png"
+alt="AK Enterprise Business Growth">
 
 </div>
+
 
 <div class="visual-card">
 
 <strong>360°</strong>
-<span>Business Branding Solutions</span>
+
+<span>
+Business Branding Solutions
+</span>
 
 </div>
 
 </div>
+
 
 </div>
 
@@ -1181,23 +1456,46 @@ alt="Professional business branding">
 <div class="stats-grid">
 
 <div class="stat">
+
 <h3>8+</h3>
-<p>Business Services</p>
+
+<p>
+Business Services
+</p>
+
 </div>
 
+
 <div class="stat">
+
 <h3>1 Place</h3>
-<p>Complete Branding</p>
+
+<p>
+Complete Branding
+</p>
+
 </div>
 
+
 <div class="stat">
+
 <h3>₹99+</h3>
-<p>Starting Designs</p>
+
+<p>
+Starting Designs
+</p>
+
 </div>
 
+
 <div class="stat">
+
 <h3>100%</h3>
-<p>Digital Delivery</p>
+
+<p>
+Digital Delivery
+</p>
+
 </div>
 
 </div>
@@ -1211,9 +1509,13 @@ alt="Professional business branding">
 
 <div class="section-head">
 
-<div class="small">ABOUT US</div>
+<div class="small">
+ABOUT US
+</div>
 
-<h2>Give Your Business a Professional Identity</h2>
+<h2>
+Give Your Business a Professional Identity
+</h2>
 
 <p>
 A strong business is not only about the product —
@@ -1225,10 +1527,12 @@ your digital presence and visual identity matter too.
 
 <div class="about-grid">
 
+
 <div class="about-img">
 
-<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
-alt="AK Enterprise business solutions">
+<img
+src="assets/ak-logo.png"
+alt="AK Enterprise">
 
 </div>
 
@@ -1240,40 +1544,56 @@ Welcome to <span>AK Enterprise</span>
 </h3>
 
 <p>
-AK Enterprise provides professional digital branding, business
-promotion and printing solutions designed especially for growing
-local businesses, shops, startups and professionals.
+
+AK Enterprise provides professional
+digital branding, business promotion
+and printing solutions designed especially
+for growing local businesses, shops,
+startups and professionals.
+
 </p>
 
+
 <p>
-Our goal is simple — your customer should be able to understand
-your business, trust your brand and contact you easily.
+
+Our goal is simple —
+your customer should be able to understand
+your business, trust your brand and
+contact you easily.
+
 </p>
+
 
 <div class="points">
 
 <div class="point">
-<b>✓</b> Professional Designs
+<b>✓</b>
+Professional Designs
 </div>
 
 <div class="point">
-<b>✓</b> Mobile-Friendly Websites
+<b>✓</b>
+Mobile-Friendly Websites
 </div>
 
 <div class="point">
-<b>✓</b> Business Branding
+<b>✓</b>
+Business Branding
 </div>
 
 <div class="point">
-<b>✓</b> Digital Promotion
+<b>✓</b>
+Digital Promotion
 </div>
 
 <div class="point">
-<b>✓</b> Printing Solutions
+<b>✓</b>
+Printing Solutions
 </div>
 
 <div class="point">
-<b>✓</b> WhatsApp Support
+<b>✓</b>
+WhatsApp Support
 </div>
 
 </div>
@@ -1287,13 +1607,20 @@ your business, trust your brand and contact you easily.
 
 <!-- SERVICES -->
 
-<section class="services-section" id="services">
+<section
+class="services-section"
+id="services">
+
 
 <div class="section-head">
 
-<div class="small">WHAT WE DO</div>
+<div class="small">
+WHAT WE DO
+</div>
 
-<h2>Our Professional Services</h2>
+<h2>
+Our Professional Services
+</h2>
 
 <p>
 Everything your business needs to look professional,
@@ -1306,26 +1633,41 @@ reach customers and build a strong brand presence.
 <div class="services-grid">
 
 
+<!-- 01 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=85"
-alt="Logo design service">
+
+<img
+src="assets/ak-logo.png"
+alt="Logo Design">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">01 • BRAND IDENTITY</div>
+<div class="service-number">
+01 • BRAND IDENTITY
+</div>
 
-<h3>Logo Design</h3>
+<h3>
+Logo Design
+</h3>
 
 <p>
-Create a unique and professional logo that represents
-your business and builds brand recognition.
+Create a unique and professional logo
+that represents your business and
+builds brand recognition.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20a%20Logo%20Design." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20a%20Logo%20Design."
+class="service-link">
+
 Get Logo Design →
+
 </a>
 
 </div>
@@ -1333,26 +1675,41 @@ Get Logo Design →
 </div>
 
 
+<!-- 02 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=85"
-alt="Business website service">
+
+<img
+src="assets/business-growth.png"
+alt="Business Website">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">02 • DIGITAL PRESENCE</div>
+<div class="service-number">
+02 • DIGITAL PRESENCE
+</div>
 
-<h3>Business Website</h3>
+<h3>
+Business Website
+</h3>
 
 <p>
-Modern responsive websites that show your services,
-portfolio, contact details and business information.
+Modern responsive websites that show
+your services, portfolio, contact details
+and business information.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20a%20Business%20Website." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20a%20Business%20Website."
+class="service-link">
+
 Build My Website →
+
 </a>
 
 </div>
@@ -1360,26 +1717,41 @@ Build My Website →
 </div>
 
 
+<!-- 03 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=85"
+
+<img
+src="assets/business-growth.png"
 alt="Google Business Profile">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">03 • LOCAL GROWTH</div>
+<div class="service-number">
+03 • LOCAL GROWTH
+</div>
 
-<h3>Google Business Profile</h3>
+<h3>
+Google Business Profile
+</h3>
 
 <p>
-Set up and optimize your Google Business presence so
-customers can discover your business locally.
+Set up and optimize your Google Business
+presence so customers can discover
+your business locally.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20Google%20Business%20Profile%20setup." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20Google%20Business%20Profile%20setup."
+class="service-link">
+
 Improve My Google Presence →
+
 </a>
 
 </div>
@@ -1387,26 +1759,41 @@ Improve My Google Presence →
 </div>
 
 
+<!-- 04 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=85"
-alt="WhatsApp Business">
+
+<img
+src="assets/social-media.png"
+alt="WhatsApp Business Setup">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">04 • CUSTOMER CONNECT</div>
+<div class="service-number">
+04 • CUSTOMER CONNECT
+</div>
 
-<h3>WhatsApp Business Setup</h3>
+<h3>
+WhatsApp Business Setup
+</h3>
 
 <p>
-Professional WhatsApp Business setup with profile,
-catalog, services and customer communication structure.
+Professional WhatsApp Business setup
+with profile, catalog, services and
+customer communication structure.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20WhatsApp%20Business%20Setup." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20WhatsApp%20Business%20Setup."
+class="service-link">
+
 Setup My WhatsApp →
+
 </a>
 
 </div>
@@ -1414,26 +1801,41 @@ Setup My WhatsApp →
 </div>
 
 
+<!-- 05 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=85"
-alt="Digital visiting card">
+
+<img
+src="assets/digital-visiting-card.png"
+alt="Digital Visiting Card">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">05 • DIGITAL IDENTITY</div>
+<div class="service-number">
+05 • DIGITAL IDENTITY
+</div>
 
-<h3>Digital Visiting Card</h3>
+<h3>
+Digital Visiting Card
+</h3>
 
 <p>
-Professional digital visiting card design delivered as
-JPG/PNG + PDF. Perfect for sharing on WhatsApp.
+Professional digital visiting card design
+delivered as JPG/PNG + PDF.
+Perfect for sharing on WhatsApp.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20the%20Digital%20Visiting%20Card%20Design." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20the%20Digital%20Visiting%20Card%20Design."
+class="service-link">
+
 Get Card Design →
+
 </a>
 
 </div>
@@ -1441,26 +1843,41 @@ Get Card Design →
 </div>
 
 
+<!-- 06 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=800&q=85"
-alt="Poster design">
+
+<img
+src="assets/social-media.png"
+alt="Poster Design">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">06 • PROMOTION</div>
+<div class="service-number">
+06 • PROMOTION
+</div>
 
-<h3>Poster & Banner Design</h3>
+<h3>
+Poster & Banner Design
+</h3>
 
 <p>
-Promotional, festival, offer, social media and business
-poster designs created for attention and engagement.
+Promotional, festival, offer, social media
+and business poster designs created
+for attention and engagement.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20a%20Poster%20Design." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20a%20Poster%20Design."
+class="service-link">
+
 Design My Poster →
+
 </a>
 
 </div>
@@ -1468,26 +1885,41 @@ Design My Poster →
 </div>
 
 
+<!-- 07 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=85"
-alt="T-shirt printing">
+
+<img
+src="assets/tshirt-branding.png"
+alt="T-Shirt Printing">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">07 • PRINTING</div>
+<div class="service-number">
+07 • PRINTING
+</div>
 
-<h3>T-Shirt Printing</h3>
+<h3>
+T-Shirt Printing
+</h3>
 
 <p>
-Custom T-shirt printing for business branding,
-events, teams, promotions and personal requirements.
+Custom T-shirt printing for business
+branding, events, teams, promotions
+and personal requirements.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20T-Shirt%20Printing." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20T-Shirt%20Printing."
+class="service-link">
+
 Print My T-Shirt →
+
 </a>
 
 </div>
@@ -1495,26 +1927,41 @@ Print My T-Shirt →
 </div>
 
 
+<!-- 08 -->
+
 <div class="service">
 
 <div class="service-img">
-<img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=85"
-alt="Business branding">
+
+<img
+src="assets/tshirt-branding.png"
+alt="Complete Branding">
+
 </div>
+
 
 <div class="service-content">
 
-<div class="service-number">08 • BUSINESS BRANDING</div>
+<div class="service-number">
+08 • BUSINESS BRANDING
+</div>
 
-<h3>Complete Branding</h3>
+<h3>
+Complete Branding
+</h3>
 
 <p>
-Build a consistent visual identity across your logo,
-website, social media, promotional materials and more.
+Build a consistent visual identity across
+your logo, website, social media,
+promotional materials and more.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20Complete%20Business%20Branding." class="service-link">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20need%20Complete%20Business%20Branding."
+class="service-link">
+
 Brand My Business →
+
 </a>
 
 </div>
@@ -1533,13 +1980,17 @@ Brand My Business →
 
 <div class="section-head">
 
-<div class="small">OUR PROCESS</div>
+<div class="small">
+OUR PROCESS
+</div>
 
-<h2>How We Work</h2>
+<h2>
+How We Work
+</h2>
 
 <p>
-Simple, transparent and focused on getting your business
-a professional final result.
+Simple, transparent and focused on getting
+your business a professional final result.
 </p>
 
 </div>
@@ -1547,16 +1998,24 @@ a professional final result.
 
 <div class="process-grid">
 
+
 <div class="process">
 
-<div class="num">01</div>
+<div class="num">
+01
+</div>
 
-<div class="process-icon">💬</div>
+<div class="process-icon">
+💬
+</div>
 
-<h3>Tell Us</h3>
+<h3>
+Tell Us
+</h3>
 
 <p>
-Share your business details, requirement and ideas with us.
+Share your business details,
+requirement and ideas with us.
 </p>
 
 </div>
@@ -1564,14 +2023,21 @@ Share your business details, requirement and ideas with us.
 
 <div class="process">
 
-<div class="num">02</div>
+<div class="num">
+02
+</div>
 
-<div class="process-icon">🎨</div>
+<div class="process-icon">
+🎨
+</div>
 
-<h3>We Design</h3>
+<h3>
+We Design
+</h3>
 
 <p>
-We create the design or digital solution according to your requirement.
+We create the design or digital solution
+according to your requirement.
 </p>
 
 </div>
@@ -1579,14 +2045,21 @@ We create the design or digital solution according to your requirement.
 
 <div class="process">
 
-<div class="num">03</div>
+<div class="num">
+03
+</div>
 
-<div class="process-icon">✓</div>
+<div class="process-icon">
+✓
+</div>
 
-<h3>Review & Approve</h3>
+<h3>
+Review & Approve
+</h3>
 
 <p>
-You review the work and provide feedback where required.
+You review the work and provide
+feedback where required.
 </p>
 
 </div>
@@ -1594,17 +2067,25 @@ You review the work and provide feedback where required.
 
 <div class="process">
 
-<div class="num">04</div>
+<div class="num">
+04
+</div>
 
-<div class="process-icon">🚀</div>
+<div class="process-icon">
+🚀
+</div>
 
-<h3>Final Delivery</h3>
+<h3>
+Final Delivery
+</h3>
 
 <p>
-After approval, your final digital or print-ready work is delivered.
+After approval, your final digital
+or print-ready work is delivered.
 </p>
 
 </div>
+
 
 </div>
 
@@ -1613,17 +2094,24 @@ After approval, your final digital or print-ready work is delivered.
 
 <!-- PORTFOLIO -->
 
-<section class="showcase" id="portfolio">
+<section
+class="showcase"
+id="portfolio">
+
 
 <div class="section-head">
 
-<div class="small">OUR WORK</div>
+<div class="small">
+OUR WORK
+</div>
 
-<h2>Designed to Make Your Business Stand Out</h2>
+<h2>
+Designed to Make Your Business Stand Out
+</h2>
 
 <p>
-From digital identity to promotional material —
-show customers what professional branding looks like.
+Here are examples of the kind of branding
+and promotional solutions AK Enterprise provides.
 </p>
 
 </div>
@@ -1634,12 +2122,20 @@ show customers what professional branding looks like.
 
 <div class="showcase-item">
 
-<img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=85"
-alt="Brand identity">
+<img
+src="assets/ak-logo.png"
+alt="AK Enterprise Logo Design">
 
 <div class="showcase-label">
-<strong>Brand Identity</strong>
-<span>Logo & Visual Branding</span>
+
+<strong>
+Brand Identity
+</strong>
+
+<span>
+Logo & Visual Branding
+</span>
+
 </div>
 
 </div>
@@ -1647,12 +2143,20 @@ alt="Brand identity">
 
 <div class="showcase-item">
 
-<img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85"
-alt="Website design">
+<img
+src="assets/business-growth.png"
+alt="Business Growth">
 
 <div class="showcase-label">
-<strong>Business Website</strong>
-<span>Modern Responsive Design</span>
+
+<strong>
+Business Growth
+</strong>
+
+<span>
+Digital Business Solutions
+</span>
+
 </div>
 
 </div>
@@ -1660,12 +2164,20 @@ alt="Website design">
 
 <div class="showcase-item">
 
-<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=85"
-alt="Digital card">
+<img
+src="assets/digital-visiting-card.png"
+alt="Digital Visiting Card">
 
 <div class="showcase-label">
-<strong>Digital Visiting Card</strong>
-<span>Professional Digital Identity</span>
+
+<strong>
+Digital Visiting Card
+</strong>
+
+<span>
+Professional Digital Identity
+</span>
+
 </div>
 
 </div>
@@ -1673,12 +2185,20 @@ alt="Digital card">
 
 <div class="showcase-item">
 
-<img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=900&q=85"
-alt="Promotional poster">
+<img
+src="assets/social-media.png"
+alt="Social Media Design">
 
 <div class="showcase-label">
-<strong>Promotional Design</strong>
-<span>Posters & Social Media</span>
+
+<strong>
+Social Media Design
+</strong>
+
+<span>
+Posts & Business Promotion
+</span>
+
 </div>
 
 </div>
@@ -1686,25 +2206,20 @@ alt="Promotional poster">
 
 <div class="showcase-item">
 
-<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=85"
-alt="T-shirt printing">
+<img
+src="assets/tshirt-branding.png"
+alt="T-Shirt Branding">
 
 <div class="showcase-label">
-<strong>T-Shirt Printing</strong>
-<span>Custom Business Printing</span>
-</div>
 
-</div>
+<strong>
+T-Shirt Printing
+</strong>
 
+<span>
+Custom Business Branding
+</span>
 
-<div class="showcase-item">
-
-<img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=900&q=85"
-alt="Google business">
-
-<div class="showcase-label">
-<strong>Google Presence</strong>
-<span>Local Business Visibility</span>
 </div>
 
 </div>
@@ -1719,14 +2234,20 @@ alt="Google business">
 
 <section>
 
+
 <div class="section-head">
 
-<div class="small">STARTING OFFERS</div>
+<div class="small">
+STARTING OFFERS
+</div>
 
-<h2>Professional Work at Simple Starting Prices</h2>
+<h2>
+Professional Work at Simple Starting Prices
+</h2>
 
 <p>
-Choose the service you need and start building a better business presence.
+Choose the service you need and start
+building a better business presence.
 </p>
 
 </div>
@@ -1737,18 +2258,30 @@ Choose the service you need and start building a better business presence.
 
 <div class="offer">
 
-<div class="tag">POPULAR</div>
+<div class="tag">
+POPULAR
+</div>
 
-<h3>Logo Design</h3>
+<h3>
+Logo Design
+</h3>
 
-<div class="price">₹299</div>
+<div class="price">
+₹299
+</div>
 
 <p>
-Professional business logo design for your brand.
+Professional business logo design
+for your brand.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20Logo%20Design%20for%20%E2%82%B9299." class="btn btn-gold" style="margin-top:18px;">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20Logo%20Design%20for%20%E2%82%B9299."
+class="btn btn-gold"
+style="margin-top:18px">
+
 Order Now
+
 </a>
 
 </div>
@@ -1756,19 +2289,30 @@ Order Now
 
 <div class="offer">
 
-<div class="tag">DIGITAL</div>
+<div class="tag">
+DIGITAL
+</div>
 
-<h3>Visiting Card</h3>
+<h3>
+Visiting Card
+</h3>
 
-<div class="price">₹199</div>
+<div class="price">
+₹199
+</div>
 
 <p>
-One professional digital visiting card design.
-JPG/PNG + PDF delivery.
+One professional digital visiting card
+design. JPG/PNG + PDF delivery.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20Digital%20Visiting%20Card%20Design%20for%20%E2%82%B9199." class="btn btn-gold" style="margin-top:18px;">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20Digital%20Visiting%20Card%20Design%20for%20%E2%82%B9199."
+class="btn btn-gold"
+style="margin-top:18px">
+
 Order Now
+
 </a>
 
 </div>
@@ -1776,19 +2320,30 @@ Order Now
 
 <div class="offer">
 
-<div class="tag">PROMOTION</div>
+<div class="tag">
+PROMOTION
+</div>
 
-<h3>Festival Poster</h3>
+<h3>
+Festival Poster
+</h3>
 
-<div class="price">₹99</div>
+<div class="price">
+₹99
+</div>
 
 <p>
-Professional promotional poster for your business,
-offer or festival campaign.
+Professional promotional poster for
+your business, offer or festival campaign.
 </p>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20Festival%20Poster%20Design%20for%20%E2%82%B999." class="btn btn-gold" style="margin-top:18px;">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20Festival%20Poster%20Design%20for%20%E2%82%B999."
+class="btn btn-gold"
+style="margin-top:18px">
+
 Order Now
+
 </a>
 
 </div>
@@ -1799,18 +2354,24 @@ Order Now
 </section>
 
 
-<!-- WHY US -->
+<!-- WHY -->
 
 <section class="why">
 
+
 <div class="section-head">
 
-<div class="small">WHY AK ENTERPRISE</div>
+<div class="small">
+WHY AK ENTERPRISE
+</div>
 
-<h2>More Than Just Design</h2>
+<h2>
+More Than Just Design
+</h2>
 
 <p>
-We focus on how your customer sees and understands your business.
+We focus on how your customer sees
+and understands your business.
 </p>
 
 </div>
@@ -1821,9 +2382,13 @@ We focus on how your customer sees and understands your business.
 
 <div class="why-card">
 
-<div class="why-icon">🎯</div>
+<div class="why-icon">
+🎯
+</div>
 
-<h3>Business Focused</h3>
+<h3>
+Business Focused
+</h3>
 
 <p>
 Every design is created with your business,
@@ -1835,9 +2400,13 @@ customers and marketing goal in mind.
 
 <div class="why-card">
 
-<div class="why-icon">📱</div>
+<div class="why-icon">
+📱
+</div>
 
-<h3>Mobile Friendly</h3>
+<h3>
+Mobile Friendly
+</h3>
 
 <p>
 Your digital presence should work beautifully
@@ -1849,13 +2418,17 @@ where your customers are — on their phones.
 
 <div class="why-card">
 
-<div class="why-icon">🤝</div>
+<div class="why-icon">
+🤝
+</div>
 
-<h3>Easy Communication</h3>
+<h3>
+Easy Communication
+</h3>
 
 <p>
-Discuss your requirement directly through WhatsApp
-and keep the process simple.
+Discuss your requirement directly through
+WhatsApp and keep the process simple.
 </p>
 
 </div>
@@ -1863,13 +2436,17 @@ and keep the process simple.
 
 <div class="why-card">
 
-<div class="why-icon">✨</div>
+<div class="why-icon">
+✨
+</div>
 
-<h3>Professional Quality</h3>
+<h3>
+Professional Quality
+</h3>
 
 <p>
-Clean, modern and premium-looking creative work
-that builds customer confidence.
+Clean, modern and premium-looking creative
+work that builds customer confidence.
 </p>
 
 </div>
@@ -1877,13 +2454,17 @@ that builds customer confidence.
 
 <div class="why-card">
 
-<div class="why-icon">⚡</div>
+<div class="why-icon">
+⚡
+</div>
 
-<h3>One Place Solution</h3>
+<h3>
+One Place Solution
+</h3>
 
 <p>
-Branding, website, digital promotion and printing
-solutions from one business partner.
+Branding, website, digital promotion and
+printing solutions from one business partner.
 </p>
 
 </div>
@@ -1891,13 +2472,17 @@ solutions from one business partner.
 
 <div class="why-card">
 
-<div class="why-icon">📈</div>
+<div class="why-icon">
+📈
+</div>
 
-<h3>Built for Growth</h3>
+<h3>
+Built for Growth
+</h3>
 
 <p>
-Our solutions help businesses improve their visibility,
-presentation and customer reach.
+Our solutions help businesses improve their
+visibility, presentation and customer reach.
 </p>
 
 </div>
@@ -1912,24 +2497,38 @@ presentation and customer reach.
 
 <section class="cta">
 
+
 <div class="cta-box">
 
-<h2>Ready to Make Your Business Look Professional?</h2>
+<h2>
+Ready to Make Your Business Look Professional?
+</h2>
 
 <p>
-Tell us what you need. Whether it's a logo, website,
-Google Business Profile, WhatsApp setup, poster,
-digital card or T-shirt printing — let's build it together.
+Tell us what you need. Whether it's a logo,
+website, Google Business Profile, WhatsApp setup,
+poster, digital card or T-shirt printing —
+let's build it together.
 </p>
+
 
 <div class="cta-buttons">
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20discuss%20my%20business%20requirement." class="btn btn-wa">
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20discuss%20my%20business%20requirement."
+class="btn btn-wa">
+
 💬 Start on WhatsApp
+
 </a>
 
-<a href="tel:9555153856" class="btn btn-gold">
+
+<a
+href="tel:9555153856"
+class="btn btn-gold">
+
 📞 9555153856
+
 </a>
 
 </div>
@@ -1941,13 +2540,20 @@ digital card or T-shirt printing — let's build it together.
 
 <!-- CONTACT -->
 
-<section class="contact" id="contact">
+<section
+class="contact"
+id="contact">
+
 
 <div class="section-head">
 
-<div class="small">CONTACT</div>
+<div class="small">
+CONTACT
+</div>
 
-<h2>Let's Work Together</h2>
+<h2>
+Let's Work Together
+</h2>
 
 <p>
 Have a project or business requirement?
@@ -1962,33 +2568,51 @@ Contact AK Enterprise directly.
 
 <div class="contact-card">
 
-<div class="icon">📞</div>
+<div class="icon">
+📞
+</div>
 
-<h3>Call Us</h3>
+<h3>
+Call Us
+</h3>
 
-<p>9555153856</p>
+<p>
+9555153856
+</p>
 
 </div>
 
 
 <div class="contact-card">
 
-<div class="icon">💬</div>
+<div class="icon">
+💬
+</div>
 
-<h3>WhatsApp</h3>
+<h3>
+WhatsApp
+</h3>
 
-<p>Quick Business Enquiry</p>
+<p>
+Quick Business Enquiry
+</p>
 
 </div>
 
 
 <div class="contact-card">
 
-<div class="icon">📍</div>
+<div class="icon">
+📍
+</div>
 
-<h3>Location</h3>
+<h3>
+Location
+</h3>
 
-<p>Lakhimpur Kheri, Uttar Pradesh</p>
+<p>
+Lakhimpur Kheri, Uttar Pradesh
+</p>
 
 </div>
 
@@ -2002,20 +2626,24 @@ Contact AK Enterprise directly.
 
 <footer>
 
+
 <div class="footer-inner">
 
 
 <div>
 
-<h3>AK ENTERPRISE</h3>
+<h3>
+AK ENTERPRISE
+</h3>
 
 <p>
-Digital Branding, Business Solutions & Printing Services.
+Digital Branding, Business Solutions
+& Printing Services.
 </p>
 
 <p>
-Helping businesses build a professional identity
-both online and offline.
+Helping businesses build a professional
+identity both online and offline.
 </p>
 
 </div>
@@ -2023,26 +2651,58 @@ both online and offline.
 
 <div>
 
-<h3>Services</h3>
+<h3>
+Services
+</h3>
 
-<a href="#services">Logo Design</a>
-<a href="#services">Business Website</a>
-<a href="#services">Google Business</a>
-<a href="#services">WhatsApp Setup</a>
-<a href="#services">Digital Visiting Card</a>
+<a href="#services">
+Logo Design
+</a>
+
+<a href="#services">
+Business Website
+</a>
+
+<a href="#services">
+Google Business
+</a>
+
+<a href="#services">
+WhatsApp Setup
+</a>
+
+<a href="#services">
+Digital Visiting Card
+</a>
 
 </div>
 
 
 <div>
 
-<h3>More Services</h3>
+<h3>
+More Services
+</h3>
 
-<a href="#services">Poster Design</a>
-<a href="#services">T-Shirt Printing</a>
-<a href="#services">Complete Branding</a>
-<a href="#contact">Contact Us</a>
-<a href="https://wa.me/919555153856">WhatsApp</a>
+<a href="#services">
+Poster Design
+</a>
+
+<a href="#services">
+T-Shirt Printing
+</a>
+
+<a href="#services">
+Complete Branding
+</a>
+
+<a href="#contact">
+Contact Us
+</a>
+
+<a href="https://wa.me/919555153856">
+WhatsApp
+</a>
 
 </div>
 
@@ -2056,17 +2716,29 @@ both online and offline.
 
 </div>
 
+
 </footer>
 
 
 <!-- FLOATING BUTTONS -->
 
-<a href="tel:9555153856" class="float-call" aria-label="Call AK Enterprise">
+<a
+href="tel:9555153856"
+class="float-call"
+aria-label="Call AK Enterprise">
+
 📞
+
 </a>
 
-<a href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20know%20about%20your%20services." class="float-wa" aria-label="WhatsApp AK Enterprise">
+
+<a
+href="https://wa.me/919555153856?text=Hello%20AK%20Enterprise%2C%20I%20want%20to%20know%20about%20your%20services."
+class="float-wa"
+aria-label="WhatsApp AK Enterprise">
+
 💬
+
 </a>
 
 
@@ -2074,21 +2746,28 @@ both online and offline.
 
 function closePopup(){
 
-document.getElementById("popup").style.display="none";
+document
+.getElementById("popup")
+.style.display="none";
 
 }
 
-/* Close popup when clicking outside */
-
-document.getElementById("popup").addEventListener("click",function(e){
+document
+.getElementById("popup")
+.addEventListener(
+"click",
+function(e){
 
 if(e.target === this){
+
 closePopup();
+
 }
 
 });
 
 </script>
+
 
 </body>
 </html>
